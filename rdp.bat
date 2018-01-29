@@ -12,8 +12,8 @@ goto end
 
 :disable
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 1 /f
-netsh advfirewall delete rule name="Remote Desktop
+netsh advfirewall delete rule name="Remote Desktop"
 echo rdp is now disabled
-goto end"
+goto end
 
 :end
